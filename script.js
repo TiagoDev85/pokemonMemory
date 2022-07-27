@@ -93,20 +93,23 @@ startGame.addEventListener("click", () => {
 // }
 
 let selectDifficult = document.querySelector(".select-difficult");
+let runGame = document.querySelector('.run-game')
+
+
 // DEFININDO DIFICULDADE DO JOGO
 for (let o = 0; o < selectDifficult.length; o++) {
-  if (selectDifficult[o].value == 1) {
-    selectDifficult[o].addEventListener("change", () => {
+  if (selectDifficult[o].value == 1) {        
+    selectDifficult[o].addEventListener("click", () => {       
       allFunctions(imagesEasy);
     });
   }
   if (selectDifficult[o].value == 2) {
-    selectDifficult[o].addEventListener("change", () => {
+    selectDifficult[o].addEventListener("click", () => {
       allFunctions(imagesMedium);
     });
   }
   if (selectDifficult[o].value == 3) {
-    selectDifficult[o].addEventListener("change", () => {
+    selectDifficult[o].addEventListener("click", () => {
       allFunctions(imagesHard);
     });
   }

@@ -196,7 +196,7 @@
 }
 .select-mode #difficult{
     padding: .3rem;
-    width: 150px;
+    width: 200px;
     height: 40px;
     background-color: #2d6ab4;    
     color: #fff;
@@ -204,8 +204,24 @@
     border: none;
     text-align: center;
     text-transform: uppercase;
-    -webkit-appearance: none;
-    -moz-appearance: none;    
+    /* -webkit-appearance: none;
+    -moz-appearance: none;     */
+}
+.run-game{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 1px #000;
+    background-color: #2d6ab4;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.run-game:active{
+    transform: scale(.9);
+    transition: transform .1s;
 }
 /* TELA DO FINAL */
 .end {    
