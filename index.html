@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da memória - Pokemon</title>
+</head>
+<body>    
+    <div class="container">
+        <div class="inicio">
+            <div class="start">
+                <div class="logo-pokemon">
+                    <h1>jogo da memória</h1>
+                    <h2 class="btn-start">clique para jogar</h2>
+                </div>
+                <div class="select-mode">                
+                    <label>Selecione a dificuldade</label>
+                    <select name="difficult" id="difficult" class="select-difficult">
+                        <option value="1" selected="selected">Fácil</option>
+                        <option value="2">Médio</option>
+                        <option value="3">Difícil</option>
+                    </select>                
+                </div>
+            </div>        
+        </div>
+    
+        <div class="game">
+            <img src="img/logo.png" alt="logo-pokemon">
+            <main class="memory-game"></main>
+        </div>
+        
+        <div class="end">
+            <h1>você venceu</h1>
+            <img src="img/win.png" alt="">  
+            <h1 class="cliques">você usou <span class="qtd-cliques"></span> cliques</h1>      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
