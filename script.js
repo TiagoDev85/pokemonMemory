@@ -96,17 +96,17 @@ let selectDifficult = document.querySelector(".select-difficult");
 // DEFININDO DIFICULDADE DO JOGO
 for (let o = 0; o < selectDifficult.length; o++) {
   if (selectDifficult[o].value == 1) {
-    selectDifficult[o].addEventListener("click", () => {
+    selectDifficult[o].addEventListener("change", () => {
       allFunctions(imagesEasy);
     });
   }
   if (selectDifficult[o].value == 2) {
-    selectDifficult[o].addEventListener("click", () => {
+    selectDifficult[o].addEventListener("change", () => {
       allFunctions(imagesMedium);
     });
   }
   if (selectDifficult[o].value == 3) {
-    selectDifficult[o].addEventListener("click", () => {
+    selectDifficult[o].addEventListener("change", () => {
       allFunctions(imagesHard);
     });
   }
